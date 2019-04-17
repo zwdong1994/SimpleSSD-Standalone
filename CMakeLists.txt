@@ -62,7 +62,7 @@ else ()
       "-O2 -rdynamic -Wall -Wextra -Werror ${CMAKE_CXX_FLAGS}")
   endif ()
 
-  set(CMAKE_EXE_LINKER_FLAGS "-lpthread ${CMAKE_EXE_LINKER_FLAGS}")
+  set(CMAKE_EXE_LINKER_FLAGS "-pthread ${CMAKE_EXE_LINKER_FLAGS}")
 
   if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     if (CMAKE_CXX_COMPILER_VERSION VERSION_LESS "4.9")
